@@ -38,7 +38,7 @@
 		1711F0BD2434163700956868 /* UIAlertController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extensions.swift"; sourceTree = "<group>"; };
 		1711F0D32434168000956868 /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		178BEBB8242C724600897252 /* licenseKey.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = licenseKey.json; sourceTree = "<group>"; };
-		17BDA4DC23FF965000D68E52 /* PivoBasicSDKTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PivoBasicSDKTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		17BDA4DC23FF965000D68E52 /* PivoBasicSDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PivoBasicSDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17BDA4DF23FF965000D68E52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17BDA4E823FF965200D68E52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17BDA4EB23FF965200D68E52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -87,7 +87,7 @@
 		17BDA4DD23FF965000D68E52 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				17BDA4DC23FF965000D68E52 /* PivoBasicSDKTestApp.app */,
+				17BDA4DC23FF965000D68E52 /* PivoBasicSDKDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -179,7 +179,7 @@
 			);
 			name = PivoBasicSDKTestApp;
 			productName = RotatorTestApp;
-			productReference = 17BDA4DC23FF965000D68E52 /* PivoBasicSDKTestApp.app */;
+			productReference = 17BDA4DC23FF965000D68E52 /* PivoBasicSDKDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -431,8 +431,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.youvr.ios.PivoBasicSDKTestApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = app.pivo.ios.basicsdkdemo;
+				PRODUCT_NAME = PivoBasicSDKDemo;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -455,8 +455,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.youvr.ios.PivoBasicSDKTestApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = app.pivo.ios.basicsdkdemo;
+				PRODUCT_NAME = PivoBasicSDKDemo;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
