@@ -48,51 +48,64 @@ class ControlRotatorVC: UIViewController {
   }
   
   @IBAction func didRotateLeftByDegreeButtonClicked(_ sender: Any) {
+    resignResponder()
     if let angleStr = tfAngle.text, let angle = Int(angleStr) {
       pivoSDK.turnLeft(angle: angle)
     }
   }
   
   @IBAction func didRotateRightByDegreeButtonClicked(_ sender: Any) {
+    resignResponder()
     if let angleStr = tfAngle.text, let angle = Int(angleStr) {
       pivoSDK.turnRight(angle: angle)
     }
   }
   
   @IBAction func didRotateLeftContinouslyButtonClicked(_ sender: Any) {
+    resignResponder()
     pivoSDK.turnLeftContinuously()
   }
   
   @IBAction func didRotateRightContinouslyButtonClicked(_ sender: Any) {
+    resignResponder()
     pivoSDK.turnRightContinuously()
   }
   
   @IBAction func didStopButtonClicked(_ sender: Any) {
+    resignResponder()
     pivoSDK.stop()
   }
   
   @IBAction func didSpeedButtonClicked(_ sender: Any) {
+    resignResponder()
     openSpeedPickerView()
   }
   
   @IBAction func didChangeRotatornameButtonClicked(_ sender: Any) {
+    resignResponder()
     showChangeRotatorName()
   }
   
   @IBAction func didRefreshBatteryLevelButtonClicked(_ sender: Any) {
+    resignResponder()
     pivoSDK.requestBatteryLevel()
   }
   
   @IBAction func didGetPivoVersionButtonClicked(_ sender: Any) {
+    resignResponder()
     let version = pivoSDK.getPivoVersion()
     labelCommand.text = "Pivo Version: \(version)"
   }
   
   @IBAction func didDisconnectButtonClicked(_ sender: Any) {
+    resignResponder()
     pivoSDK.disconnect()
     navigationController?.popViewController(animated: true)
   }
   
+  private func resignResponder() {
+    tfAngle.resignFirstResponder()
+  }
 }
 
 extension ControlRotatorVC {

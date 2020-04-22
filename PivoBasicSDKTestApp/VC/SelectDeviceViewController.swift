@@ -74,7 +74,9 @@ class SelectDeviceViewController: UIViewController, UIImagePickerControllerDeleg
       return
     }
     
-    self.startScan()
+    DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+      self.startScan()
+    }
   }
   
   private func startScan() {
@@ -83,7 +85,6 @@ class SelectDeviceViewController: UIViewController, UIImagePickerControllerDeleg
   }
   
   @IBAction func scanForBluetooth(_ sender: UIBarButtonItem) {
-    self.view.isUserInteractionEnabled = true
     scanBluetoothDevice()
   }
   
@@ -119,6 +120,12 @@ class SelectDeviceViewController: UIViewController, UIImagePickerControllerDeleg
         presentAlert(title: "Failed", message: "Bluetooth is off, please turn it on")
       case .cannotReadLicenseKeyFile:
         presentAlert(title: "Failed", message: "Can't read license key")
+      case .bluetoothPermissionNotAllowed:
+        presentAlert(title: "Failed", message: "Bluetooth permission is not allowed")
+      case .trackingModeNotSupported:
+        break
+      @unknown default:
+        break
       }
       return
     }
@@ -190,13 +197,12 @@ extension SelectDeviceViewController: PivoConnectionDelegate {
     isConnecting = false
     tableView.reloadData()
     handleRotatorConnected()
+    view.isUserInteractionEnabled = true
   }
   
   func pivoConnection(didConnectionFailed id: String) {
     isConnecting = false
-    DispatchQueue.main.async {
-      self.view.isUserInteractionEnabled = true
-    }
+    view.isUserInteractionEnabled = true
     let alertController = UIAlertController(title: "Connection Failed",
                                             message: "Failed to connect. Do you want to try again?",
                                             preferredStyle: UIAlertController.Style.alert)

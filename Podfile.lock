@@ -1,5 +1,5 @@
 PODS:
-  - PivoBasicSDK (0.0.1)
+  - PivoBasicSDK (0.0.2)
 
 DEPENDENCIES:
   - PivoBasicSDK
@@ -9,8 +9,8 @@ SPEC REPOS:
     - PivoBasicSDK
 
 SPEC CHECKSUMS:
-  PivoBasicSDK: fa1dc37ec00fd5ac169016a647299603fd5e24c6
+  PivoBasicSDK: dce40e9bc6e90aecb1b3f505f8b66e6c70e277eb
 
 PODFILE CHECKSUM: 7b75db7f316510ed0f65b4427a778822b5795e0c
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.1
