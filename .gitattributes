@@ -1,0 +1,4 @@
+Frameworks/PivoBasicSDK.framework/Frameworks/Realm.framework/Realm filter=lfs diff=lfs merge=lfs -text
+Frameworks/PivoBasicSDK.framework/Frameworks/RealmSwift.framework/RealmSwift filter=lfs diff=lfs merge=lfs -text
+Frameworks/PivoBasicSDK.framework/Modules/PivoBasicSDK.swiftmodule/arm64-apple-ios.abi.json filter=lfs diff=lfs merge=lfs -text
+Frameworks/PivoBasicSDK.framework/PivoBasicSDK filter=lfs diff=lfs merge=lfs -text

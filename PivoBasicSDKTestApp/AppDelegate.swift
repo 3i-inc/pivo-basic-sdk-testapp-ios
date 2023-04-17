@@ -17,14 +17,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
     
-    if let vc = SelectDeviceViewController.storyboardInstance() {
+    if let vc = SelectPivoVC.storyboardInstance() {
       window?.rootViewController = vc
       window?.makeKeyAndVisible()
     }
     
     if let licenseFileURL = Bundle.main.url(forResource: "licenseKey", withExtension: "json") {
       do {
-        try PivoBasicSDK.shared.unlockWithLicenseKey(licenseKeyFileURL: licenseFileURL)
+        try PivoSDK.shared.unlockWithLicenseKey(licenseKeyFileURL: licenseFileURL)
       }
       catch {
         print(error)
