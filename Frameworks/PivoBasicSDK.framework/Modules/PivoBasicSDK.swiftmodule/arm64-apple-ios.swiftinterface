@@ -122,24 +122,18 @@ public struct InputFrame {
     get
   }
 }
-public enum TrackingPosition {
-  case topLeft
-  case topCenter
-  case topRight
-  case centerLeft
-  case centerCenter
-  case centerRight
-  case bottomLeft
-  case bottomCenter
-  case bottomRight
-  public var name: Swift.String {
+public enum TrackingPosition : Swift.Int {
+  case left
+  case center
+  case right
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
     get
   }
 }
-extension PivoBasicSDK.TrackingPosition : Swift.RawRepresentable {
-  public typealias RawValue = Swift.Int
-  public init?(rawValue: Swift.Int)
-  public var rawValue: Swift.Int {
+extension PivoBasicSDK.TrackingPosition {
+  public var name: Swift.String {
     get
   }
 }
@@ -2604,15 +2598,6 @@ extension ObjectiveC.NSObject {
 public protocol PivoEventLogger {
   func addEvent(_ event: Swift.String)
 }
-public enum member {
-  case jiny, arlin, jellapi
-  public static func == (a: PivoBasicSDK.member, b: PivoBasicSDK.member) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
-public func print(_ items: Any, _ printType: PivoBasicSDK.member = .jellapi)
 public enum PivoLogLevel : Swift.Int {
   case Debug
   case Release
@@ -2739,6 +2724,7 @@ extension PivoBasicSDK.CameraSide : Swift.Equatable {}
 extension PivoBasicSDK.CameraSide : Swift.Hashable {}
 extension PivoBasicSDK.TrackingPosition : Swift.Equatable {}
 extension PivoBasicSDK.TrackingPosition : Swift.Hashable {}
+extension PivoBasicSDK.TrackingPosition : Swift.RawRepresentable {}
 extension PivoBasicSDK.TrackingMode : Swift.Equatable {}
 extension PivoBasicSDK.TrackingMode : Swift.Hashable {}
 extension PivoBasicSDK.PivoError : Swift.Equatable {}
@@ -2850,8 +2836,6 @@ extension PivoBasicSDK.PivoOTAUpdaterError : Swift.Equatable {}
 extension PivoBasicSDK.PivoOTAUpdaterError : Swift.Hashable {}
 extension PivoBasicSDK.Pivo2DOTAUpdater.Status : Swift.Equatable {}
 extension PivoBasicSDK.Pivo2DOTAUpdater.Status : Swift.Hashable {}
-extension PivoBasicSDK.member : Swift.Equatable {}
-extension PivoBasicSDK.member : Swift.Hashable {}
 extension PivoBasicSDK.PivoLogLevel : Swift.Equatable {}
 extension PivoBasicSDK.PivoLogLevel : Swift.Hashable {}
 extension PivoBasicSDK.PivoLogLevel : Swift.RawRepresentable {}

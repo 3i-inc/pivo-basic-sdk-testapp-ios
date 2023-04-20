@@ -282,6 +282,7 @@ SWIFT_CLASS("_TtC12PivoBasicSDK22MicBluetoothConnection")
 
 
 
+
 /// Pivo Remote Controller Bluetooth Connection
 /// This is used to connect with Pivo Remote Controller which supports Bluetooth Connection
 /// It supports connection, disconnect and OTA update

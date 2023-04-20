@@ -14,7 +14,7 @@
 		</data>
 		<key>Frameworks/MBProgressHUD.framework/MBProgressHUD</key>
 		<data>
-		+q0rqvjJu5mjR16cQS5ItZjURsM=
+		+2+WzvovQ5Mn14tnNpajONlF+O0=
 		</data>
 		<key>Frameworks/MBProgressHUD.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Frameworks/Realm.framework/Realm</key>
 		<data>
-		ZYsZTAeZ8zvIVvXSAXUx/eTQqMo=
+		I59YrmkUqEpsKllai40x8OKcO3Q=
 		</data>
 		<key>Frameworks/Realm.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Frameworks/RealmSwift.framework/RealmSwift</key>
 		<data>
-		gN/Bg5qzwAxo4jwDS5CVOqAPlhM=
+		FoW4tQi9PyawtbbHq0Otk4XUO8c=
 		</data>
 		<key>Frameworks/RealmSwift.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Headers/PivoBasicSDK-Swift.h</key>
 		<data>
-		iT1xLpKgjDNwMZ9X093NNvvGpM4=
+		7qVEH+PP1nONYv27fevNFch3DQ0=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -62,15 +62,15 @@
 		</data>
 		<key>Modules/PivoBasicSDK.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		aQhZTC7hZ7OZTQEpB1Y3+VGe+LE=
+		XBOjTZi4B/adeFjNiu3+DUZvgcM=
 		</data>
 		<key>Modules/PivoBasicSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		sCglCewOAeKl61GVS6yPoU7X8hQ=
+		ccKo/holGplrSsFYUPxCxJhIRv4=
 		</data>
 		<key>Modules/PivoBasicSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		zZyVlFc0HzvF7VK/krOAjXtTz30=
+		E6+bsrshnZc6eAls1NWGDJhVoBQ=
 		</data>
 		<key>Modules/PivoBasicSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -78,11 +78,11 @@
 		</data>
 		<key>Modules/PivoBasicSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		zZyVlFc0HzvF7VK/krOAjXtTz30=
+		E6+bsrshnZc6eAls1NWGDJhVoBQ=
 		</data>
 		<key>Modules/PivoBasicSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		Du7lHyhlTrBycgPJidSf4V3BFSY=
+		3uozfBJotvU9jLVvLcfrLdWtEfU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -213,7 +213,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BS7lN/Q/lFABRP+1FUjjYJSBZaiQr+a3gDqq8vf3oXI=
+			6/PKBDpuOBYNUzwwBOd0DlP0WTO1v4Ywy5TIzI/egog=
 			</data>
 		</dict>
 		<key>Frameworks/MBProgressHUD.framework/_CodeSignature/CodeResources</key>
@@ -248,7 +248,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UoxmYAso0eGGAm+8WJ3mf9bYY7QUbRdOjeojfpd6m7I=
+			T/kgT+Kri8PZTivPcbIe8nKDzhIswBFkXZUw+dopY3o=
 			</data>
 		</dict>
 		<key>Frameworks/Realm.framework/_CodeSignature/CodeResources</key>
@@ -269,7 +269,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Gd7cf95FbzNb13eCAMdzmO5cTlgGfGbFa4z/RXMNS80=
+			dFfzjnuLy1FJr3PiVzRrb6+bsClUMGYUUsnOgIb/c1Q=
 			</data>
 		</dict>
 		<key>Frameworks/RealmSwift.framework/_CodeSignature/CodeResources</key>
@@ -283,28 +283,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/cgJ7LMf4Gh5HGd6jer+rrigAyIPtbURzZL2kwnK6Bk=
+			qwI6CvzMLCNzmOmiETZvIp3jYAu7EkdiSCg86Wh4wVk=
 			</data>
 		</dict>
 		<key>Modules/PivoBasicSDK.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lFIkBdS9XZh0tKAiSftxgAtcOn7tciYQJJUETYgSGio=
+			A6ZQhXAQeZFLSq2oBl4MCwPBNcjTMubyGRQAO9JGjWM=
 			</data>
 		</dict>
 		<key>Modules/PivoBasicSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MPITvnkPG1cFhDpt0cOz9k1BCuWqySG+kAjADgGyEis=
+			unr1gRCmOCEAk2G2VeEAGPMRbPR56+ISs41aJI6yuKI=
 			</data>
 		</dict>
 		<key>Modules/PivoBasicSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ybxcPFqBMX141yELN4GPGAnL9FuBjGP21aPn1ivOJlc=
+			H8+LjNNaY8j98VbajGb5n+gh3jJFKQCEzUH99T3el8k=
 			</data>
 		</dict>
 		<key>Modules/PivoBasicSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -318,14 +318,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ybxcPFqBMX141yELN4GPGAnL9FuBjGP21aPn1ivOJlc=
+			H8+LjNNaY8j98VbajGb5n+gh3jJFKQCEzUH99T3el8k=
 			</data>
 		</dict>
 		<key>Modules/PivoBasicSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			49k0PKI9swV3MIfzLii08c980XXNmlQZ5lE5BlR1/PM=
+			8bj5UxpV6E414S0Uze3g/8v78I1Ca7WCL4G2YduVQA4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

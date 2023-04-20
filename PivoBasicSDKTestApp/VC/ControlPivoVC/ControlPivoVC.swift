@@ -126,11 +126,6 @@ class ControlPivoVC: UIViewController {
     navigationController?.popViewController(animated: true)
   }
   
-//  @IBAction func didCameraTrackingButtonClicked(_ sender: UIButton) {
-//    if let vc = TrackingVC.storyboardInstance() {
-//      navigationController?.pushViewController(vc, animated: true)
-//    }
-//  }
   
   @IBAction func didToggleByPassRCChanged(_ sender: UISwitch) {
     do {

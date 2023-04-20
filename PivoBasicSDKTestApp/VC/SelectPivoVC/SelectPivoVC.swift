@@ -193,9 +193,11 @@ extension SelectPivoVC: PodConnectionDelegate {
   
   func pivoConnection(didEstablishSuccessfully device: BluetoothDevice) {
     isConnecting = false
-    tableView.reloadData()
-    handleRotatorConnected()
-    view.isUserInteractionEnabled = true
+    DispatchQueue.main.async { [weak self] in
+      self?.tableView.reloadData()
+      self?.handleRotatorConnected()
+      self?.view.isUserInteractionEnabled = true
+    }
   }
   
   func pivoConnectionBluetoothPermissionDenied() {
@@ -205,22 +207,22 @@ extension SelectPivoVC: PodConnectionDelegate {
   
   func pivoConnection(didFailToConnect device: BluetoothDevice) {
     isConnecting = false
-    view.isUserInteractionEnabled = true
-    let alertController = UIAlertController(title: "Connection Failed",
-                                            message: "Failed to connect. Do you want to try again?",
-                                            preferredStyle: UIAlertController.Style.alert)
-    
-    let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel, handler: nil)
-    let scanAction = UIAlertAction(title: "Scan", style: UIAlertAction.Style.default) { (result : UIAlertAction) -> Void in
-      self.rotators.removeAll()
-      self.updateView()
-      self.scanBluetoothDevice()
-    }
-    
-    DispatchQueue.main.async {
+    DispatchQueue.main.async { [weak self] in
+      self?.view.isUserInteractionEnabled = true
+      let alertController = UIAlertController(title: "Connection Failed",
+                                              message: "Failed to connect. Do you want to try again?",
+                                              preferredStyle: UIAlertController.Style.alert)
+      
+      let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel, handler: nil)
+      let scanAction = UIAlertAction(title: "Scan", style: UIAlertAction.Style.default) { (result : UIAlertAction) -> Void in
+        self?.rotators.removeAll()
+        self?.updateView()
+        self?.scanBluetoothDevice()
+      }
+      
       alertController.addAction(cancelAction)
       alertController.addAction(scanAction)
-      self.present(alertController, animated: true, completion: nil)
+      self?.present(alertController, animated: true, completion: nil)
     }
   }
   
