@@ -12,7 +12,7 @@ Please visit [Pivo developer website](https://developer.pivo.app/) and generate 
 In your pod file, add this:
 
 ```
-pod 'PivoProSDK', :git => 'https://github.com/pivo-inc/pivo-pro-sdk-ios.git', :tag => '0.0.8'
+pod 'PivoBasicSDK', :git => 'https://github.com/pivo-inc/pivo-basic-sdk-ios.git', :tag => '0.0.8'
 ```
 ## Usage
 
@@ -89,3 +89,9 @@ In version 0.0.8:
 - Support new Pivo types
 - Build with Swift 5.5
 - In order to get `Rotated` feedback when rotates Pivo, please make sure to use `turnLeftWithFeedback` and `turnRightWithFeedback` with speed from `getSupportedSpeedsByRemoteControllerInSecoundsPerRound`
+
+In version 1.0.0:
+- This version is not distributed through pods.
+- Supports new Pivo Types (Pivo Max)
+- Build with XCode 14.1
+- Apply new mobile sdk
